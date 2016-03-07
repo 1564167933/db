@@ -31,23 +31,35 @@
         <processorPath useClasspath="true" />
         <module name="base" />
       </profile>
-      <profile default="false" name="Maven default annotation processors profile" enabled="true">
-        <sourceOutputDir name="target/generated-sources/annotations" />
-        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+      <profile default="false" name="Annotation profile for admin" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="admin" />
-        <module name="service" />
+      </profile>
+      <profile default="false" name="Annotation profile for webservice" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="webservice" />
+      </profile>
+      <profile default="false" name="Annotation profile for service" enabled="true">
+        <sourceOutputDir name="target\generated-sources\annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="admin" target="1.5" />
+      <module name="admin" target="1.8" />
       <module name="base" target="1.8" />
       <module name="db" target="1.8" />
       <module name="model" target="1.8" />
-      <module name="service" target="1.5" />
-      <module name="webservice" target="1.5" />
+      <module name="service" target="1.8" />
+      <module name="webservice" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

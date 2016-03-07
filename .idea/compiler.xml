@@ -31,11 +31,23 @@
         <processorPath useClasspath="true" />
         <module name="base" />
       </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="admin" />
+        <module name="service" />
+        <module name="webservice" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="admin" target="1.5" />
       <module name="base" target="1.8" />
       <module name="db" target="1.8" />
       <module name="model" target="1.8" />
+      <module name="service" target="1.5" />
+      <module name="webservice" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
